@@ -75,11 +75,11 @@ impl Weather {
 
     pub fn draw(&self) {
         draw_text(
-            &format!("Wind Speed: {:.2}", self.wind_speed),
+            &format!("Wind Speed: {:.2} KT", self.wind_speed),
+            10.0,
             20.0,
-            60.0,
             30.0,
-            DARKGRAY,
+            WHITE,
         );
 
         for particle in &self.particles {
